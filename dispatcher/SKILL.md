@@ -1,5 +1,6 @@
 ---
 name: dispatcher
+version: 1.0.0
 description: Auto-detect task mode (ANALYZE, REVIEW, CREATE) from user input and route to the correct skill chain automatically. Use when invoked via /dispatch or when a complex request is ambiguous about what kind of help is needed. Eliminates manual skill invocation on multi-step tasks.
 ---
 

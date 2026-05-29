@@ -1,5 +1,6 @@
 ---
 name: clarifying-questions
+version: 1.0.0
 description: Ask clarifying questions until reaching 95% confidence you can complete the task successfully. Trigger this skill whenever a user request is ambiguous, has unclear requirements, or success criteria aren't defined. Also use this skill when explicitly invoked via /clarifying-questions command. Systematically explore unknowns through grouped questions, track confidence level openly, and proceed only when hitting 95% certainty. Essential for high-stakes tasks, ambiguous requests, or any work where clarity prevents rework.
 ---
 

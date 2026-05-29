@@ -1,5 +1,6 @@
 ---
 name: style-enforcer-pipeline
+version: 1.0.0
 description: Transform raw text into polished, human-sounding, fact-checked output in one pass. Chains style enforcement (no em dashes, Oxford commas, filler), humanization (remove AI patterns), and fact-checking into a single automated pipeline. Use this whenever you need text refined through all three layers at once—blog posts, emails, documents, content before publishing. Just paste and run.
 ---
 

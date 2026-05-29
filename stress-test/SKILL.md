@@ -1,5 +1,6 @@
 ---
 name: stress-test
+version: 1.0.0
 description: Run a two-pass adversarial stress test on any artifact, plan, strategy, document, or idea. Use when the user types /stress-test or says "stress-test this." Pass 1 argues against the work's own conclusion (adversarial review). Pass 2 asks the questions the creator must answer before the work is defensible (reverse interview). Ends with a synthesis identifying the single biggest unresolved risk. Load sparring-partner skill for the full framework.
 ---
 

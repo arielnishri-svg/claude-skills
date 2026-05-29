@@ -1,5 +1,6 @@
 ---
 name: request-validator
+version: 1.0.0
 description: Validate every output request before execution. Runs automatically on complex tasks and manually via /validate. Extracts request intent (format, deliverable, structure, scope), maps planned output against it, and BLOCKS execution if mismatch detected. Use this to catch format errors, scope creep, and structural misalignment before wasting tokens. Critical for preventing "I made X but you asked for Y" rework cycles.
 ---
 

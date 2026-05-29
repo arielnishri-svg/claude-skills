@@ -1,5 +1,6 @@
 ---
 name: summarize-doc
+version: 1.0.0
 description: Compress heavy documents to 20-30% original length. Trigger on /summarize-doc slash command or when user has PDF, Word doc, or other lengthy document they want condensed for quick review. Preserves all facts, names, dates, claims, instructions without losing substance.
 ---
 

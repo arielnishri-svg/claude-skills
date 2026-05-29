@@ -1,15 +1,18 @@
 ---
 name: compact-conversation
-description: Summarize entire conversation into compressed snapshot for pasting into fresh chat. Preserves original goal/problem, key decisions and reasoning, code/config/data settled on in verbatim code blocks, open questions, next steps. Use this whenever user wants context continuity across new conversations or mentions long chats ballooning their token usage. Trigger on phrases like "compress this," "save context," "new chat summary," "summarize for next chat," or "I need this condensed."
+version: 1.0.0
+description: Lightweight conversation compressor for quick context continuity. Produces a short snapshot (goal, decisions, settled code, open questions, next steps) under 800 words. Use for routine "summarize this chat" requests where a fast snapshot is enough. For full work-resumption handoffs that need failed approaches, traps, and confidence flags, defer to the handoff skill instead.
 ---
 
 # Compact Conversation Skill
 
-Compress multi-turn conversations into dense, portable summaries that preserve all signal without filler.
+Compress multi-turn conversations into dense, portable summaries that preserve all signal without filler. This is the lightweight option.
 
 ## When to Use
 
-User explicitly requests conversation compression for handoff to new chat. Signs: "I want to continue this in a fresh chat," "summarize the whole conversation," "I need the context compressed," "save this before I start a new one."
+Routine compression where a fast, short snapshot suffices: "summarize this chat," "quick recap before I start fresh."
+
+**Defer to `handoff` instead** when the user says "handoff," "save state," "continue this in another conversation," or the work has failed approaches/traps worth preserving. handoff is the superset; this skill is the quick version. Do not run both.
 
 ## Output Format
 

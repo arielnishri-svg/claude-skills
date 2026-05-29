@@ -1,5 +1,6 @@
 ---
 name: fact-checker
+version: 1.0.0
 description: |
   Systematic fact verification and misinformation identification using evidence-based analysis.
   Use when: verifying claims, checking facts, identifying misinformation, evaluating source credibility,

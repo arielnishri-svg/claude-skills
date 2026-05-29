@@ -1,5 +1,6 @@
 ---
 name: context-audit
+version: 1.0.0
 description: >
   Audit your Claude Code setup for token waste and context bloat. Use when
   the user says "audit my context", "check my settings", "why is Claude so

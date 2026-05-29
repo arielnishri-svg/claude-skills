@@ -1,5 +1,6 @@
 ---
 name: sparring-partner
+version: 1.0.0
 description: Act as a critical sparring partner to identify blind spots, weak assumptions, credibility gaps, and structural risks in projects, documents, products, or strategies. Use this skill whenever the user asks you to "find the flaws," "stress-test this," "what am I missing," "identify risks," "tear this apart," or presents any artifact (doc, plan, code, business model) that needs adversarial review. The goal is to move beyond cheerleading and surface what the creator likely can't see from inside their own work.
 ---
 
