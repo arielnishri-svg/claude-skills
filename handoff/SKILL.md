@@ -1,12 +1,6 @@
 ---
 name: handoff
-description: >-
-  Create a clipboard-ready handoff document to resume work in a fresh Claude
-  chat with zero context loss. Preserves goal/problem, key decisions with
-  reasoning, code/config settled (verbatim), traps/failed approaches, open
-  questions, next steps, and confidence flags. Trigger on - "handoff",
-  "prepare context for next chat", "summarize for next chat", "compress this",
-  "save context", "new chat summary", "save state", "context is getting full".
+description: Create a clipboard-ready handoff document to resume work in a fresh Claude chat with zero context loss. Preserves goal/problem, key decisions with reasoning, code/config settled (verbatim), traps/failed approaches, open questions, next steps, and confidence flags. Trigger on: "handoff", "prepare context for next chat", "summarize for next chat", "continue this in another conversation", "compress this", "save context", "new chat summary", "I need this condensed", "save state", "context is getting full".
 ---
 
 # Handoff Skill (Enhanced Compact Conversation)
@@ -199,22 +193,3 @@ First test run on SNDK: Hold verdict.
 **Keep total length under 1000 words if possible.**
 
 ---
-
-## Installation
-
-Save this as `~/.claude/skills/handoff/SKILL.md` (create the directory if it doesn't exist).
-
-On macOS/Linux:
-```bash
-mkdir -p ~/.claude/skills/handoff
-# Paste this content into ~/.claude/skills/handoff/SKILL.md
-```
-
-On Windows:
-```powershell
-mkdir $env:USERPROFILE\\.claude\\skills\\handoff
-# Paste this content into %USERPROFILE%\\.claude\\skills\\handoff\\SKILL.md
-```
-
-Claude Code auto-discovers it on the next session.
-```
