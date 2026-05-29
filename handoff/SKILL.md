@@ -1,6 +1,12 @@
 ---
 name: handoff
-description: Create a clipboard-ready handoff document to resume work in a fresh Claude chat with zero context loss. Preserves goal/problem, key decisions with reasoning, code/config settled (verbatim), traps/failed approaches, open questions, next steps, and confidence flags. Trigger on: "handoff", "prepare context for next chat", "summarize for next chat", "continue this in another conversation", "compress this", "save context", "new chat summary", "I need this condensed", "save state", "context is getting full".
+description: >-
+  Create a clipboard-ready handoff document to resume work in a fresh Claude
+  chat with zero context loss. Preserves goal/problem, key decisions with
+  reasoning, code/config settled (verbatim), traps/failed approaches, open
+  questions, next steps, and confidence flags. Trigger on - "handoff",
+  "prepare context for next chat", "summarize for next chat", "compress this",
+  "save context", "new chat summary", "save state", "context is getting full".
 ---
 
 # Handoff Skill (Enhanced Compact Conversation)
