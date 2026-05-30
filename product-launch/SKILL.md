@@ -1,5 +1,6 @@
 ---
 name: product-launch
+version: 1.0.0
 description: Turn any product or skill into a complete go-to-market plan in one guided pass. Chains a 12-step workflow (idea generation, validation, outline, pricing, platform selection, sales page, 30-day content plan) into a single sequence with a hard validation gate before build. Use when the user wants to take a product, skill, or expertise to market — triggers include "launch", "go to market", "how do I sell this", "product plan", "pricing and platform", "/product-launch". Skips ideation steps automatically when the product already exists. Outputs a sales page and content plan ready for style/humanizer/fact-check polish.
 ---
 
