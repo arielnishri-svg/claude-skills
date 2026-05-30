@@ -1,6 +1,6 @@
 # claude-skills
 
-A collection of modular Claude skills for critical thinking, content creation, document work, and workflow automation. 21 skills, each self-contained with YAML frontmatter and a slash-command trigger.
+A collection of modular Claude skills for critical thinking, content creation, document work, and workflow automation. 22 skills, each self-contained with YAML frontmatter and a slash-command trigger.
 
 ## Installation
 
@@ -70,6 +70,12 @@ npx skills add arielnishri-svg/claude-skills@sparring-partner
 |-------|--------|-------------|
 | [frontend-design](./frontend-design/SKILL.md) | natural language | Distinctive, production-grade UI that avoids generic AI aesthetics |
 | [frontend-slides](./frontend-slides/SKILL.md) | `/frontend-slides` | Animation-rich HTML presentations from scratch or converted from PPTX |
+
+### Workflow & Launch
+
+| Skill | Invoke | What it does |
+|-------|--------|-------------|
+| [product-launch](./product-launch/SKILL.md) | `/product-launch` | Full go-to-market plan: validation, pricing, platform, sales page, 30-day content calendar |
 
 ### Context & Continuity
 
