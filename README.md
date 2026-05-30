@@ -1,6 +1,6 @@
 # claude-skills
 
-A collection of modular Claude skills for critical thinking, content creation, document work, and workflow automation. 21 skills, each self-contained with YAML frontmatter and a slash-command trigger.
+A collection of modular Claude skills for critical thinking, content creation, document work, and workflow automation. 20 skills, each self-contained with YAML frontmatter and a slash-command trigger.
 
 ## Installation
 
