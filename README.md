@@ -1,6 +1,6 @@
 # claude-skills
 
-A collection of modular Claude skills for critical thinking, content creation, document work, and workflow automation. 22 skills, each self-contained with YAML frontmatter and a slash-command trigger.
+A collection of modular Claude skills for critical thinking, content creation, document work, and workflow automation. 23 skills, each self-contained with YAML frontmatter and a slash-command trigger.
 
 ## Installation
 
@@ -46,6 +46,7 @@ npx skills add arielnishri-svg/claude-skills@sparring-partner
 | [clarifying-questions](./clarifying-questions/SKILL.md) | `/clarifying-questions` | Asks questions until 95% confidence before executing complex tasks |
 | [request-validator](./request-validator/SKILL.md) | `/validate` | Validates output format and scope before execution to prevent rework |
 | [task-audit](./task-audit/SKILL.md) | `/task-audit` | Appends a completion audit: exact item count, every skip named, "complete" only if truly done |
+| [blind-spot-audit](./blind-spot-audit/SKILL.md) | `/blind-spot` | Surfaces checks that were never in scope — lateral gaps Claude didn't run because no one assigned them |
 
 ### Writing & Content
 
