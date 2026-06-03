@@ -201,16 +201,3 @@ First test run on SNDK: Hold verdict.
 **Keep total length under 1000 words if possible.**
 
 ---
-
-## Installation
-
-Save this as `~/.claude/skills/handoff/SKILL.md` (create the directory if it doesn't exist).
-
-```bash
-cd /mnt/skills/user
-mkdir -p handoff
-# Paste this content into /mnt/skills/user/handoff/SKILL.md
-```
-
-Claude Code auto-discovers it on the next session.
-```
