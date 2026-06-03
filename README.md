@@ -40,7 +40,7 @@ npx skills add arielnishri-svg/claude-skills@sparring-partner
 |-------|--------|-------------|
 | [dispatcher](./dispatcher/SKILL.md) | `/dispatch` | Auto-detects task mode (ANALYZE/REVIEW/CREATE) and routes to the right skill chain |
 | [anti-sycophancy](./anti-sycophancy/SKILL.md) | `/anti-syc` | Rewrites validation-seeking prompts into adversarial ones before answering — catches sycophancy at the question level |
-| [sparring-partner](./sparring-partner/SKILL.md) | `/sparring-partner` | Adversarial review — surfaces blind spots, credibility gaps, structural risks |
+| [sparring-partner](./sparring-partner/SKILL.md) | `/sparring-partner` | Adversarial review — surfaces blind spots, credibility gaps, structural risks. Includes `/stress-test` mode (two-pass adversarial + reverse interview) |
 | [decision-toolkit](./decision-toolkit/SKILL.md) | `/decision-toolkit` | Structured decision frameworks, tradeoff matrices, scenario explorers |
 | [clarifying-questions](./clarifying-questions/SKILL.md) | `/clarifying-questions` | Asks questions until 95% confidence before executing complex tasks |
 | [request-validator](./request-validator/SKILL.md) | `/validate` | Validates output format and scope before execution to prevent rework |
@@ -111,7 +111,7 @@ Most skills also activate from natural language — e.g. pasting a document and 
 
 - Every `SKILL.md` carries `name`, `version`, and `description` frontmatter
 - Paths are POSIX (`/mnt/skills/user/...`); no Windows-style backslashes
-- Each skill is self-contained; cross-skill references are explicit (e.g. stress-test loads sparring-partner)
+- Each skill is self-contained
 
 ## License
 
