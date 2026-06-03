@@ -1,6 +1,6 @@
 # claude-skills
 
-A collection of modular Claude skills for critical thinking, content creation, document work, and workflow automation. 23 skills, each self-contained with YAML frontmatter and a slash-command trigger.
+A collection of modular Claude skills for critical thinking, content creation, document work, and workflow automation. 21 skills, each self-contained with YAML frontmatter and a slash-command trigger.
 
 ## Installation
 
@@ -41,7 +41,6 @@ npx skills add arielnishri-svg/claude-skills@sparring-partner
 | [dispatcher](./dispatcher/SKILL.md) | `/dispatch` | Auto-detects task mode (ANALYZE/REVIEW/CREATE) and routes to the right skill chain |
 | [anti-sycophancy](./anti-sycophancy/SKILL.md) | `/anti-syc` | Rewrites validation-seeking prompts into adversarial ones before answering — catches sycophancy at the question level |
 | [sparring-partner](./sparring-partner/SKILL.md) | `/sparring-partner` | Adversarial review — surfaces blind spots, credibility gaps, structural risks |
-| [stress-test](./stress-test/SKILL.md) | `/stress-test` | Two-pass adversarial + reverse interview on any artifact |
 | [decision-toolkit](./decision-toolkit/SKILL.md) | `/decision-toolkit` | Structured decision frameworks, tradeoff matrices, scenario explorers |
 | [clarifying-questions](./clarifying-questions/SKILL.md) | `/clarifying-questions` | Asks questions until 95% confidence before executing complex tasks |
 | [request-validator](./request-validator/SKILL.md) | `/validate` | Validates output format and scope before execution to prevent rework |
@@ -83,7 +82,6 @@ npx skills add arielnishri-svg/claude-skills@sparring-partner
 | Skill | Invoke | What it does |
 |-------|--------|-------------|
 | [handoff](./handoff/SKILL.md) | `/handoff` | Full work-resumption document: decisions, traps, failed approaches, confidence flags |
-| [compact-conversation](./compact-conversation/SKILL.md) | `/compact-conversation` | Lightweight chat snapshot (under 800 words) for quick continuity |
 | [context-audit](./context-audit/SKILL.md) | `/context-audit` | Audits Claude Code setup for token waste and context bloat |
 
 ### Discovery
@@ -91,8 +89,6 @@ npx skills add arielnishri-svg/claude-skills@sparring-partner
 | Skill | Invoke | What it does |
 |-------|--------|-------------|
 | [find-skills](./find-skills/SKILL.md) | `/find-skills` | Discovers and installs skills from the open agent skills ecosystem |
-
-> **handoff vs compact-conversation:** handoff is the full superset (traps, failed approaches, confidence flags). compact-conversation is the quick version. compact defers to handoff for explicit-handoff phrases, so they no longer collide.
 
 ## Requirements
 
@@ -106,7 +102,6 @@ Invoke by slash command or natural-language trigger:
 ```
 /dispatch help me figure out my pricing strategy
 /sparring-partner [paste your document]
-/stress-test [paste your plan]
 /handoff
 ```
 
