@@ -8,6 +8,10 @@ The diagram below is interactive inside Claude (tap any skill for its descriptio
 <img src="./routing-map.svg" alt="Skill usage map: routing all 21 skills by intent" width="680">
 </p>
 
+## How to use
+
+Find what you're doing in the map, then run that skill's slash command (listed in the tables below). Where a panel names an order or a chain, follow it — e.g. run `request-validator` before work and `sparring-partner` after, or use `style-enforcer-pipeline` to run the three writing skills in one pass. Not sure which branch you're in? Run `/dispatch` and it routes you.
+
 ## By intent
 
 ### Deciding / exploring — no draft yet
