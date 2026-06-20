@@ -1,6 +1,6 @@
 # claude-skills
 
-A collection of modular Claude skills for critical thinking, content creation, document work, and workflow automation. 21 skills, each self-contained with YAML frontmatter and a slash-command trigger.
+A collection of modular Claude skills for critical thinking, content creation, document work, and workflow automation. 23 skills, each self-contained with YAML frontmatter and a slash-command trigger.
 
 **New here? See [ROUTING.md](./ROUTING.md) for a visual map of which skill to run when.**
 
@@ -43,11 +43,13 @@ npx skills add arielnishri-svg/claude-skills@sparring-partner
 | [dispatcher](./dispatcher/SKILL.md) | `/dispatch` | Auto-detects task mode (ANALYZE/REVIEW/CREATE) and routes to the right skill chain |
 | [anti-sycophancy](./anti-sycophancy/SKILL.md) | `/anti-syc` | Rewrites validation-seeking prompts into adversarial ones before answering — catches sycophancy at the question level |
 | [sparring-partner](./sparring-partner/SKILL.md) | `/sparring-partner` | Adversarial review — surfaces blind spots, credibility gaps, structural risks. Includes `/stress-test` mode (two-pass adversarial + reverse interview) |
+| [llm-council](./llm-council/SKILL.md) | `council this` | Runs a decision through 5 independent advisors (Contrarian, First Principles, Expansionist, Outsider, Executor), peer review round, then chairman synthesis — for high-stakes calls where one perspective isn't enough |
 | [decision-toolkit](./decision-toolkit/SKILL.md) | `/decision-toolkit` | Structured decision frameworks, tradeoff matrices, scenario explorers |
 | [clarifying-questions](./clarifying-questions/SKILL.md) | `/clarifying-questions` | Asks questions until 95% confidence before executing complex tasks |
 | [request-validator](./request-validator/SKILL.md) | `/validate` | Validates output format and scope before execution to prevent rework |
 | [task-audit](./task-audit/SKILL.md) | `/task-audit` | Appends a completion audit: exact item count, every skip named, "complete" only if truly done |
 | [blind-spot-audit](./blind-spot-audit/SKILL.md) | `/blind-spot` | Surfaces checks that were never in scope — lateral gaps Claude didn't run because no one assigned them |
+| [qa-expert](./qa-expert/SKILL.md) | natural language | QA strategy, risk-based test prioritisation, quality gates, test plan templates, and defect metrics |
 
 ### Writing & Content
 

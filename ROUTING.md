@@ -5,7 +5,7 @@ Which skill to run, by intent. Start at "what are you doing", follow your branch
 The diagram below is interactive inside Claude (tap any skill for its description). On GitHub it renders static — use the table underneath as the reference.
 
 <p align="center">
-<img src="./routing-map.svg" alt="Skill usage map: routing all 21 skills by intent" width="680">
+<img src="./routing-map.svg" alt="Skill usage map: routing all 23 skills by intent" width="680">
 </p>
 
 ## How to use
@@ -20,9 +20,10 @@ Find what you're doing in the map, then run that skill's slash command (listed i
 |-------|--------|------|
 | clarifying-questions | `/clarifying-questions` | Request is ambiguous, lock scope to 95% before work |
 | decision-toolkit | `/decision-toolkit` | Weighing options, need a tradeoff framework |
+| llm-council | `council this` | High-stakes decision — 5 advisors + peer review + chairman synthesis |
 | anti-sycophancy | `/anti-syc` | Rewrite a validation-seeking question before answering |
 
-Typical flow: clarifying-questions → decision-toolkit, with anti-sycophancy upstream on the question itself.
+Typical flow: clarifying-questions → decision-toolkit or llm-council (use the council when the cost of a wrong call is high), with anti-sycophancy upstream on the question itself.
 
 ### Reviewing / auditing — have a draft or output
 
@@ -32,8 +33,9 @@ Typical flow: clarifying-questions → decision-toolkit, with anti-sycophancy up
 | blind-spot-audit | `/blind-spot` | After a multi-item edit — checks that were never in scope |
 | task-audit | `/task-audit` | After a task — did I finish every assigned item |
 | sparring-partner | `/sparring-partner` | Attack the argument; `/stress-test` mode for two-pass adversarial |
+| qa-expert | natural language | QA strategy, test coverage plans, quality gates, bug templates |
 
-Order: request-validator before work, blind-spot-audit (cheap, structural) then sparring-partner (deep, semantic) after. task-audit answers "did I finish"; blind-spot-audit answers "what was never in scope".
+Order: request-validator before work, blind-spot-audit (cheap, structural) then sparring-partner (deep, semantic) after. task-audit answers "did I finish"; blind-spot-audit answers "what was never in scope". qa-expert is for when the output is code or a testable system.
 
 ### Creating / writing — producing new output
 
@@ -73,4 +75,4 @@ style-enforcer-pipeline = humanizer + fact-checker chained with style enforcemen
 
 ---
 
-21 skills. Archive/ excluded.
+23 skills. Archive/ excluded.
