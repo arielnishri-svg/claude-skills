@@ -5,7 +5,7 @@ Which skill to run, by intent. Start at "what are you doing", follow your branch
 The diagram below is interactive inside Claude (tap any skill for its description). On GitHub it renders static — use the table underneath as the reference.
 
 <p align="center">
-<img src="./routing-map.svg" alt="Skill usage map: routing all 23 skills by intent" width="680">
+<img src="./routing-map.svg" alt="Skill usage map: routing all 25 skills by intent" width="680">
 </p>
 
 ## How to use
@@ -62,6 +62,7 @@ style-enforcer-pipeline = humanizer + fact-checker chained with style enforcemen
 |-------|--------|------|
 | frontend-design | natural language | UI, components, pages |
 | frontend-slides | `/frontend-slides` | HTML presentations / PPTX conversion |
+| graphify | natural language | Any input → interactive knowledge graph → HTML + JSON |
 
 ### Workflow / continuity / discovery
 
@@ -70,9 +71,10 @@ style-enforcer-pipeline = humanizer + fact-checker chained with style enforcemen
 | product-launch | `/product-launch` | Full go-to-market plan |
 | handoff | `/handoff` | Resume work in a fresh chat with no context loss |
 | context-audit | `/context-audit` | Token waste and bloat in your Claude Code setup |
+| usage-local-api | natural language | Check current Claude session / weekly / Opus quota |
 | find-skills | `/find-skills` | Discover and install skills you don't have yet |
 | dispatcher | `/dispatch` | Routes any request above when you're not sure which to run |
 
 ---
 
-23 skills. Archive/ excluded.
+25 skills. Private skills excluded.

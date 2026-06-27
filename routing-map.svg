@@ -1,173 +1,257 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="680" viewBox="0 0 680 1188" role="img" font-family="system-ui, -apple-system, sans-serif">
-<title>Skill usage map</title>
-<desc>Routing reference for all 23 skills grouped by intent: deciding, reviewing, creating, prompting, frontend, and workflow. Each skill box links to its SKILL.md.</desc>
-<style>
-.t{fill:#2C2C2A;font-size:14px;font-weight:500}
-.ts{fill:#5F5E5A;font-size:12px}
-.title{fill:#2C2C2A;font-size:18px;font-weight:500}
-a{cursor:pointer}
-</style>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
-<rect x="0" y="0" width="680" height="1188" fill="#FCFBF7"/>
+<svg width="680" height="2080" viewBox="0 0 680 2080" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,sans-serif">
 
-<text class="title" x="40" y="34" dominant-baseline="central">Skill usage map</text>
-<text class="ts" x="40" y="56" dominant-baseline="central">Start at the question, follow your intent. Click any skill to open its SKILL.md</text>
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
 
-<a href="./dispatcher/SKILL.md" target="_blank">
-<rect x="250" y="78" width="180" height="48" rx="10" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
-<text class="t" x="340" y="98" text-anchor="middle" dominant-baseline="central">What are you doing?</text>
-<text class="ts" x="340" y="116" text-anchor="middle" dominant-baseline="central">unsure: /dispatch routes it</text>
-</a>
+  <!-- Background -->
+  <rect width="680" height="2080" fill="#f7f7f5"/>
 
-<line x1="285" y1="126" x2="135" y2="176" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
-<line x1="325" y1="126" x2="295" y2="176" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
-<line x1="355" y1="126" x2="455" y2="176" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- HEADER -->
+  <text x="30" y="50" font-size="28" font-weight="700" fill="#1e293b">Skill usage map</text>
+  <text x="30" y="76" font-size="13" fill="#64748b">Start at the question, follow your intent. Click any skill to open its SKILL.md</text>
 
-<rect x="45" y="178" width="180" height="44" rx="10" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
-<text x="135" y="196" text-anchor="middle" dominant-baseline="central" fill="#0C447C" font-size="14" font-weight="500">Deciding</text>
-<text x="135" y="214" text-anchor="middle" dominant-baseline="central" fill="#185FA5" font-size="12">exploring, no draft yet</text>
-<rect x="250" y="178" width="180" height="44" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
-<text x="340" y="196" text-anchor="middle" dominant-baseline="central" fill="#085041" font-size="14" font-weight="500">Reviewing</text>
-<text x="340" y="214" text-anchor="middle" dominant-baseline="central" fill="#0F6E56" font-size="12">have a draft or output</text>
-<rect x="455" y="178" width="180" height="44" rx="10" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
-<text x="545" y="196" text-anchor="middle" dominant-baseline="central" fill="#712B13" font-size="14" font-weight="500">Creating</text>
-<text x="545" y="214" text-anchor="middle" dominant-baseline="central" fill="#993C1D" font-size="12">producing new output</text>
+  <!-- DECISION TREE: Question box -->
+  <rect x="190" y="100" width="300" height="65" rx="10" fill="white" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="340" y="126" text-anchor="middle" font-size="15" font-weight="700" fill="#1e293b">What are you doing?</text>
+  <text x="340" y="150" text-anchor="middle" font-size="12" fill="#64748b">unsure: /dispatch routes it</text>
 
-<!-- DECIDING SECTION — expanded to height 216 to fit llm-council -->
-<rect x="40" y="258" width="600" height="216" rx="12" fill="#F2F8FD" stroke="#378ADD" stroke-width="0.5"/>
-<text x="60" y="282" dominant-baseline="central" fill="#0C447C" font-size="14" font-weight="500">Deciding / exploring</text>
-<a href="./clarifying-questions/SKILL.md" target="_blank">
-<rect x="60" y="300" width="180" height="48" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
-<text x="150" y="320" text-anchor="middle" dominant-baseline="central" fill="#0C447C" font-size="14" font-weight="500">clarifying-questions</text>
-<text x="150" y="338" text-anchor="middle" dominant-baseline="central" fill="#185FA5" font-size="12">lock scope to 95%</text>
-</a>
-<a href="./decision-toolkit/SKILL.md" target="_blank">
-<rect x="250" y="300" width="180" height="48" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
-<text x="340" y="320" text-anchor="middle" dominant-baseline="central" fill="#0C447C" font-size="14" font-weight="500">decision-toolkit</text>
-<text x="340" y="338" text-anchor="middle" dominant-baseline="central" fill="#185FA5" font-size="12">tradeoff frameworks</text>
-</a>
-<a href="./anti-sycophancy/SKILL.md" target="_blank">
-<rect x="440" y="300" width="180" height="48" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
-<text x="530" y="320" text-anchor="middle" dominant-baseline="central" fill="#0C447C" font-size="14" font-weight="500">anti-sycophancy</text>
-<text x="530" y="338" text-anchor="middle" dominant-baseline="central" fill="#185FA5" font-size="12">kill validation bias</text>
-</a>
-<a href="./llm-council/SKILL.md" target="_blank">
-<rect x="250" y="362" width="180" height="48" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
-<text x="340" y="382" text-anchor="middle" dominant-baseline="central" fill="#0C447C" font-size="14" font-weight="500">llm-council</text>
-<text x="340" y="400" text-anchor="middle" dominant-baseline="central" fill="#185FA5" font-size="12">5 advisors + synthesis</text>
-</a>
-<text class="ts" x="60" y="432" dominant-baseline="central">Flow: clarifying-questions first, then decision-toolkit (light) or llm-council (high stakes).</text>
-<text class="ts" x="60" y="450" dominant-baseline="central">anti-sycophancy upstream on the question itself.</text>
+  <!-- Arrow fork -->
+  <line x1="340" y1="165" x2="340" y2="210" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="120" y1="210" x2="560" y2="210" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="120" y1="210" x2="120" y2="245" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="340" y1="210" x2="340" y2="245" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="560" y1="210" x2="560" y2="245" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
 
-<!-- REVIEWING SECTION — y shifted +68, qa-expert added to row 2 -->
-<rect x="40" y="488" width="600" height="208" rx="12" fill="#EFFAF5" stroke="#1D9E75" stroke-width="0.5"/>
-<text x="60" y="512" dominant-baseline="central" fill="#085041" font-size="14" font-weight="500">Reviewing / auditing</text>
-<a href="./sparring-partner/SKILL.md" target="_blank">
-<rect x="60" y="530" width="180" height="48" rx="8" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
-<text x="150" y="550" text-anchor="middle" dominant-baseline="central" fill="#085041" font-size="14" font-weight="500">sparring-partner</text>
-<text x="150" y="568" text-anchor="middle" dominant-baseline="central" fill="#0F6E56" font-size="12">attack the argument</text>
-</a>
-<a href="./blind-spot-audit/SKILL.md" target="_blank">
-<rect x="250" y="530" width="180" height="48" rx="8" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
-<text x="340" y="550" text-anchor="middle" dominant-baseline="central" fill="#085041" font-size="14" font-weight="500">blind-spot-audit</text>
-<text x="340" y="568" text-anchor="middle" dominant-baseline="central" fill="#0F6E56" font-size="12">checks never in scope</text>
-</a>
-<a href="./task-audit/SKILL.md" target="_blank">
-<rect x="440" y="530" width="180" height="48" rx="8" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
-<text x="530" y="550" text-anchor="middle" dominant-baseline="central" fill="#085041" font-size="14" font-weight="500">task-audit</text>
-<text x="530" y="568" text-anchor="middle" dominant-baseline="central" fill="#0F6E56" font-size="12">did I finish every item</text>
-</a>
-<a href="./request-validator/SKILL.md" target="_blank">
-<rect x="60" y="592" width="180" height="48" rx="8" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
-<text x="150" y="612" text-anchor="middle" dominant-baseline="central" fill="#085041" font-size="14" font-weight="500">request-validator</text>
-<text x="150" y="630" text-anchor="middle" dominant-baseline="central" fill="#0F6E56" font-size="12">format check pre-run</text>
-</a>
-<a href="./qa-expert/SKILL.md" target="_blank">
-<rect x="440" y="592" width="180" height="48" rx="8" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
-<text x="530" y="612" text-anchor="middle" dominant-baseline="central" fill="#085041" font-size="14" font-weight="500">qa-expert</text>
-<text x="530" y="630" text-anchor="middle" dominant-baseline="central" fill="#0F6E56" font-size="12">test strategy + gates</text>
-</a>
-<text class="ts" x="270" y="606" dominant-baseline="central">Order: request-validator before work,</text>
-<text class="ts" x="270" y="624" dominant-baseline="central">blind-spot-audit then sparring-partner after.</text>
-<text class="ts" x="60" y="668" dominant-baseline="central">task-audit = "did I finish"; blind-spot-audit = "never in scope"; qa-expert = "is it testable"</text>
+  <!-- Branch 1: Deciding -->
+  <rect x="20" y="248" width="200" height="65" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="120" y="276" text-anchor="middle" font-size="14" font-weight="700" fill="#1e40af">Deciding</text>
+  <text x="120" y="297" text-anchor="middle" font-size="11" fill="#3b82f6">exploring, no draft yet</text>
 
-<!-- CREATING SECTION — y shifted +68 -->
-<rect x="40" y="710" width="600" height="208" rx="12" fill="#FDF5F1" stroke="#D85A30" stroke-width="0.5"/>
-<text x="60" y="734" dominant-baseline="central" fill="#712B13" font-size="14" font-weight="500">Creating / writing</text>
-<a href="./style-enforcer-pipeline/SKILL.md" target="_blank">
-<rect x="60" y="752" width="180" height="48" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
-<text x="150" y="772" text-anchor="middle" dominant-baseline="central" fill="#712B13" font-size="14" font-weight="500">style-enforcer</text>
-<text x="150" y="790" text-anchor="middle" dominant-baseline="central" fill="#993C1D" font-size="12">all 3 in one pass</text>
-</a>
-<a href="./humanizer/SKILL.md" target="_blank">
-<rect x="250" y="752" width="180" height="48" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
-<text x="340" y="772" text-anchor="middle" dominant-baseline="central" fill="#712B13" font-size="14" font-weight="500">humanizer</text>
-<text x="340" y="790" text-anchor="middle" dominant-baseline="central" fill="#993C1D" font-size="12">strip AI patterns</text>
-</a>
-<a href="./fact-checker/SKILL.md" target="_blank">
-<rect x="440" y="752" width="180" height="48" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
-<text x="530" y="772" text-anchor="middle" dominant-baseline="central" fill="#712B13" font-size="14" font-weight="500">fact-checker</text>
-<text x="530" y="790" text-anchor="middle" dominant-baseline="central" fill="#993C1D" font-size="12">verify claims</text>
-</a>
-<a href="./summarize-doc/SKILL.md" target="_blank">
-<rect x="60" y="814" width="180" height="48" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
-<text x="150" y="834" text-anchor="middle" dominant-baseline="central" fill="#712B13" font-size="14" font-weight="500">summarize-doc</text>
-<text x="150" y="852" text-anchor="middle" dominant-baseline="central" fill="#993C1D" font-size="12">compress to 20-30%</text>
-</a>
-<a href="./earnings-analysis/SKILL.md" target="_blank">
-<rect x="250" y="814" width="180" height="48" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
-<text x="340" y="834" text-anchor="middle" dominant-baseline="central" fill="#712B13" font-size="14" font-weight="500">earnings-analysis</text>
-<text x="340" y="852" text-anchor="middle" dominant-baseline="central" fill="#993C1D" font-size="12">equity research</text>
-</a>
-<text class="ts" x="60" y="890" dominant-baseline="central">style-enforcer = humanizer + fact-checker chained. Run before publishing written work</text>
+  <!-- Branch 2: Reviewing -->
+  <rect x="240" y="248" width="200" height="65" rx="8" fill="#f0fdf4" stroke="#a7f3d0" stroke-width="1.5"/>
+  <text x="340" y="276" text-anchor="middle" font-size="14" font-weight="700" fill="#065f46">Reviewing</text>
+  <text x="340" y="297" text-anchor="middle" font-size="11" fill="#10b981">have a draft or output</text>
 
-<!-- PROMPTING SECTION — y shifted +68 -->
-<rect x="40" y="932" width="290" height="148" rx="12" fill="#FDF7EC" stroke="#BA7517" stroke-width="0.5"/>
-<text x="60" y="956" dominant-baseline="central" fill="#633806" font-size="14" font-weight="500">Prompting</text>
-<a href="./prompt-master/SKILL.md" target="_blank">
-<rect x="60" y="974" width="120" height="48" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
-<text x="120" y="994" text-anchor="middle" dominant-baseline="central" fill="#633806" font-size="14" font-weight="500">prompt-master</text>
-<text x="120" y="1012" text-anchor="middle" dominant-baseline="central" fill="#854F0B" font-size="12">build one</text>
-</a>
-<a href="./prompt-principles/SKILL.md" target="_blank">
-<rect x="195" y="974" width="120" height="48" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
-<text x="255" y="994" text-anchor="middle" dominant-baseline="central" fill="#633806" font-size="13" font-weight="500">prompt-principles</text>
-<text x="255" y="1012" text-anchor="middle" dominant-baseline="central" fill="#854F0B" font-size="12">learn why</text>
-</a>
-<text class="ts" x="60" y="1052" dominant-baseline="central">build vs teach</text>
+  <!-- Branch 3: Creating -->
+  <rect x="460" y="248" width="200" height="65" rx="8" fill="#fff1f2" stroke="#fecaca" stroke-width="1.5"/>
+  <text x="560" y="276" text-anchor="middle" font-size="14" font-weight="700" fill="#991b1b">Creating</text>
+  <text x="560" y="297" text-anchor="middle" font-size="11" fill="#ef4444">producing new output</text>
 
-<!-- FRONTEND SECTION — y shifted +68 -->
-<rect x="350" y="932" width="290" height="148" rx="12" fill="#FDF4F7" stroke="#D4537E" stroke-width="0.5"/>
-<text x="370" y="956" dominant-baseline="central" fill="#72243E" font-size="14" font-weight="500">Frontend / design</text>
-<a href="./frontend-design/SKILL.md" target="_blank">
-<rect x="370" y="974" width="120" height="48" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5"/>
-<text x="430" y="994" text-anchor="middle" dominant-baseline="central" fill="#72243E" font-size="13" font-weight="500">frontend-design</text>
-<text x="430" y="1012" text-anchor="middle" dominant-baseline="central" fill="#993556" font-size="12">UI, pages</text>
-</a>
-<a href="./frontend-slides/SKILL.md" target="_blank">
-<rect x="505" y="974" width="120" height="48" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5"/>
-<text x="565" y="994" text-anchor="middle" dominant-baseline="central" fill="#72243E" font-size="13" font-weight="500">frontend-slides</text>
-<text x="565" y="1012" text-anchor="middle" dominant-baseline="central" fill="#993556" font-size="12">presentations</text>
-</a>
-<text class="ts" x="370" y="1052" dominant-baseline="central">components vs decks</text>
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- SECTION 1: DECIDING / EXPLORING  y=345  h=300 -->
+  <!-- ══════════════════════════════════════════════ -->
+  <rect x="20" y="345" width="640" height="300" rx="12" fill="#f0f6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="35" y="374" font-size="16" font-weight="700" fill="#1e40af">Deciding / exploring</text>
 
-<!-- WORKFLOW SECTION — y shifted +68 -->
-<rect x="40" y="1094" width="600" height="70" rx="12" fill="#F4F9EC" stroke="#639922" stroke-width="0.5"/>
-<text x="60" y="1116" dominant-baseline="central" fill="#27500A" font-size="14" font-weight="500">Workflow / continuity / discovery</text>
-<a href="./product-launch/SKILL.md" target="_blank">
-<rect x="60" y="1126" width="132" height="30" rx="6" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
-<text x="126" y="1141" text-anchor="middle" dominant-baseline="central" fill="#27500A" font-size="12">product-launch</text>
-</a>
-<a href="./handoff/SKILL.md" target="_blank">
-<rect x="202" y="1126" width="132" height="30" rx="6" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
-<text x="268" y="1141" text-anchor="middle" dominant-baseline="central" fill="#27500A" font-size="12">handoff</text>
-</a>
-<a href="./context-audit/SKILL.md" target="_blank">
-<rect x="344" y="1126" width="132" height="30" rx="6" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
-<text x="410" y="1141" text-anchor="middle" dominant-baseline="central" fill="#27500A" font-size="12">context-audit</text>
-</a>
-<a href="./find-skills/SKILL.md" target="_blank">
-<rect x="486" y="1126" width="132" height="30" rx="6" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
-<text x="552" y="1141" text-anchor="middle" dominant-baseline="central" fill="#27500A" font-size="12">find-skills</text>
-</a>
+  <a href="./clarifying-questions/SKILL.md">
+    <rect x="30" y="385" width="200" height="80" rx="8" fill="white" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="42" y="408" font-size="13" font-weight="600" fill="#1e40af">clarifying-questions</text>
+    <text x="42" y="428" font-size="11" fill="#3b82f6">lock scope to 95%</text>
+    <text x="42" y="453" font-size="10" fill="#94a3b8">/clarifying-questions</text>
+  </a>
+  <a href="./decision-toolkit/SKILL.md">
+    <rect x="240" y="385" width="200" height="80" rx="8" fill="white" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="252" y="408" font-size="13" font-weight="600" fill="#1e40af">decision-toolkit</text>
+    <text x="252" y="428" font-size="11" fill="#3b82f6">tradeoff frameworks</text>
+    <text x="252" y="453" font-size="10" fill="#94a3b8">/decision-toolkit</text>
+  </a>
+  <a href="./anti-sycophancy/SKILL.md">
+    <rect x="450" y="385" width="200" height="80" rx="8" fill="white" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="462" y="408" font-size="13" font-weight="600" fill="#1e40af">anti-sycophancy</text>
+    <text x="462" y="428" font-size="11" fill="#3b82f6">kill validation bias</text>
+    <text x="462" y="453" font-size="10" fill="#94a3b8">/anti-syc</text>
+  </a>
+
+  <a href="./llm-council/SKILL.md">
+    <rect x="30" y="475" width="200" height="80" rx="8" fill="white" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="42" y="498" font-size="13" font-weight="600" fill="#1e40af">llm-council</text>
+    <text x="42" y="518" font-size="11" fill="#3b82f6">5 advisors + synthesis</text>
+    <text x="42" y="543" font-size="10" fill="#94a3b8">council this</text>
+  </a>
+
+  <text x="35" y="587" font-size="11" fill="#475569">Flow: clarifying-questions first → decision-toolkit (light) or llm-council (high stakes).</text>
+  <text x="35" y="603" font-size="11" fill="#475569">anti-sycophancy upstream on the question itself.</text>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- SECTION 2: REVIEWING / AUDITING  y=660  h=300  -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <rect x="20" y="660" width="640" height="300" rx="12" fill="#f0fdf5" stroke="#a7f3d0" stroke-width="1.5"/>
+  <text x="35" y="689" font-size="16" font-weight="700" fill="#065f46">Reviewing / auditing</text>
+
+  <a href="./request-validator/SKILL.md">
+    <rect x="30" y="700" width="200" height="80" rx="8" fill="white" stroke="#a7f3d0" stroke-width="1.5"/>
+    <text x="42" y="723" font-size="13" font-weight="600" fill="#065f46">request-validator</text>
+    <text x="42" y="743" font-size="11" fill="#10b981">scope before work</text>
+    <text x="42" y="768" font-size="10" fill="#94a3b8">/validate</text>
+  </a>
+  <a href="./blind-spot-audit/SKILL.md">
+    <rect x="240" y="700" width="200" height="80" rx="8" fill="white" stroke="#a7f3d0" stroke-width="1.5"/>
+    <text x="252" y="723" font-size="13" font-weight="600" fill="#065f46">blind-spot-audit</text>
+    <text x="252" y="743" font-size="11" fill="#10b981">checks never in scope</text>
+    <text x="252" y="768" font-size="10" fill="#94a3b8">/blind-spot</text>
+  </a>
+  <a href="./task-audit/SKILL.md">
+    <rect x="450" y="700" width="200" height="80" rx="8" fill="white" stroke="#a7f3d0" stroke-width="1.5"/>
+    <text x="462" y="723" font-size="13" font-weight="600" fill="#065f46">task-audit</text>
+    <text x="462" y="743" font-size="11" fill="#10b981">did I finish every item</text>
+    <text x="462" y="768" font-size="10" fill="#94a3b8">/task-audit</text>
+  </a>
+
+  <a href="./sparring-partner/SKILL.md">
+    <rect x="30" y="790" width="200" height="80" rx="8" fill="white" stroke="#a7f3d0" stroke-width="1.5"/>
+    <text x="42" y="813" font-size="13" font-weight="600" fill="#065f46">sparring-partner</text>
+    <text x="42" y="833" font-size="11" fill="#10b981">attack the argument</text>
+    <text x="42" y="858" font-size="10" fill="#94a3b8">/sparring-partner</text>
+  </a>
+  <a href="./qa-expert/SKILL.md">
+    <rect x="240" y="790" width="200" height="80" rx="8" fill="white" stroke="#a7f3d0" stroke-width="1.5"/>
+    <text x="252" y="813" font-size="13" font-weight="600" fill="#065f46">qa-expert</text>
+    <text x="252" y="833" font-size="11" fill="#10b981">test strategy &amp; quality gates</text>
+    <text x="252" y="858" font-size="10" fill="#94a3b8">natural language</text>
+  </a>
+
+  <text x="35" y="902" font-size="11" fill="#475569">Order: request-validator before work, blind-spot-audit + sparring-partner after.</text>
+  <text x="35" y="918" font-size="11" fill="#475569">task-audit = did I finish; blind-spot-audit = what was never in scope.</text>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- SECTION 3: CREATING / WRITING  y=975  h=300   -->
+  <!-- ══════════════════════════════════════════════ -->
+  <rect x="20" y="975" width="640" height="300" rx="12" fill="#fff5f5" stroke="#fecaca" stroke-width="1.5"/>
+  <text x="35" y="1004" font-size="16" font-weight="700" fill="#991b1b">Creating / writing</text>
+
+  <a href="./style-enforcer-pipeline/SKILL.md">
+    <rect x="30" y="1015" width="200" height="80" rx="8" fill="white" stroke="#fecaca" stroke-width="1.5"/>
+    <text x="42" y="1038" font-size="12" font-weight="600" fill="#991b1b">style-enforcer-pipeline</text>
+    <text x="42" y="1058" font-size="11" fill="#ef4444">style + humanize + facts</text>
+    <text x="42" y="1083" font-size="10" fill="#94a3b8">/style-enforcer-pipeline</text>
+  </a>
+  <a href="./humanizer/SKILL.md">
+    <rect x="240" y="1015" width="200" height="80" rx="8" fill="white" stroke="#fecaca" stroke-width="1.5"/>
+    <text x="252" y="1038" font-size="13" font-weight="600" fill="#991b1b">humanizer</text>
+    <text x="252" y="1058" font-size="11" fill="#ef4444">strip AI writing patterns</text>
+    <text x="252" y="1083" font-size="10" fill="#94a3b8">/humanizer</text>
+  </a>
+  <a href="./fact-checker/SKILL.md">
+    <rect x="450" y="1015" width="200" height="80" rx="8" fill="white" stroke="#fecaca" stroke-width="1.5"/>
+    <text x="462" y="1038" font-size="13" font-weight="600" fill="#991b1b">fact-checker</text>
+    <text x="462" y="1058" font-size="11" fill="#ef4444">verify claims</text>
+    <text x="462" y="1083" font-size="10" fill="#94a3b8">/fact-checker</text>
+  </a>
+
+  <a href="./summarize-doc/SKILL.md">
+    <rect x="30" y="1105" width="200" height="80" rx="8" fill="white" stroke="#fecaca" stroke-width="1.5"/>
+    <text x="42" y="1128" font-size="13" font-weight="600" fill="#991b1b">summarize-doc</text>
+    <text x="42" y="1148" font-size="11" fill="#ef4444">compress to 20–30%</text>
+    <text x="42" y="1173" font-size="10" fill="#94a3b8">/summarize-doc</text>
+  </a>
+  <a href="./earnings-analysis/SKILL.md">
+    <rect x="240" y="1105" width="200" height="80" rx="8" fill="white" stroke="#fecaca" stroke-width="1.5"/>
+    <text x="252" y="1128" font-size="13" font-weight="600" fill="#991b1b">earnings-analysis</text>
+    <text x="252" y="1148" font-size="11" fill="#ef4444">equity research report</text>
+    <text x="252" y="1173" font-size="10" fill="#94a3b8">/earnings-analysis</text>
+  </a>
+
+  <text x="35" y="1217" font-size="11" fill="#475569">style-enforcer-pipeline chains humanizer + fact-checker in one pass. Run before publishing.</text>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- SECTION 4: PROMPTING  y=1290  h=210           -->
+  <!-- ══════════════════════════════════════════════ -->
+  <rect x="20" y="1290" width="640" height="210" rx="12" fill="#faf5ff" stroke="#ddd6fe" stroke-width="1.5"/>
+  <text x="35" y="1319" font-size="16" font-weight="700" fill="#5b21b6">Prompting</text>
+
+  <a href="./prompt-master/SKILL.md">
+    <rect x="30" y="1330" width="200" height="80" rx="8" fill="white" stroke="#ddd6fe" stroke-width="1.5"/>
+    <text x="42" y="1353" font-size="13" font-weight="600" fill="#5b21b6">prompt-master</text>
+    <text x="42" y="1373" font-size="11" fill="#7c3aed">build a production prompt</text>
+    <text x="42" y="1398" font-size="10" fill="#94a3b8">/prompt-master</text>
+  </a>
+  <a href="./prompt-principles/SKILL.md">
+    <rect x="240" y="1330" width="200" height="80" rx="8" fill="white" stroke="#ddd6fe" stroke-width="1.5"/>
+    <text x="252" y="1353" font-size="13" font-weight="600" fill="#5b21b6">prompt-principles</text>
+    <text x="252" y="1373" font-size="11" fill="#7c3aed">learn why it underperforms</text>
+    <text x="252" y="1398" font-size="10" fill="#94a3b8">/prompt-principles</text>
+  </a>
+
+  <text x="35" y="1445" font-size="11" fill="#475569">prompt-master builds · prompt-principles teaches</text>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- SECTION 5: FRONTEND / DESIGN  y=1515  h=210   -->
+  <!-- ══════════════════════════════════════════════ -->
+  <rect x="20" y="1515" width="640" height="210" rx="12" fill="#fff8f5" stroke="#fed7aa" stroke-width="1.5"/>
+  <text x="35" y="1544" font-size="16" font-weight="700" fill="#9a3412">Frontend / design</text>
+
+  <a href="./frontend-design/SKILL.md">
+    <rect x="30" y="1555" width="200" height="80" rx="8" fill="white" stroke="#fed7aa" stroke-width="1.5"/>
+    <text x="42" y="1578" font-size="13" font-weight="600" fill="#9a3412">frontend-design</text>
+    <text x="42" y="1598" font-size="11" fill="#c2410c">production-grade UI</text>
+    <text x="42" y="1623" font-size="10" fill="#94a3b8">natural language</text>
+  </a>
+  <a href="./frontend-slides/SKILL.md">
+    <rect x="240" y="1555" width="200" height="80" rx="8" fill="white" stroke="#fed7aa" stroke-width="1.5"/>
+    <text x="252" y="1578" font-size="13" font-weight="600" fill="#9a3412">frontend-slides</text>
+    <text x="252" y="1598" font-size="11" fill="#c2410c">HTML presentations / PPTX</text>
+    <text x="252" y="1623" font-size="10" fill="#94a3b8">/frontend-slides</text>
+  </a>
+  <a href="./graphify/SKILL.md">
+    <rect x="450" y="1555" width="200" height="80" rx="8" fill="white" stroke="#fed7aa" stroke-width="1.5"/>
+    <text x="462" y="1578" font-size="13" font-weight="600" fill="#9a3412">graphify</text>
+    <text x="462" y="1598" font-size="11" fill="#c2410c">input → knowledge graph</text>
+    <text x="462" y="1623" font-size="10" fill="#94a3b8">natural language</text>
+  </a>
+
+  <text x="35" y="1661" font-size="11" fill="#475569">frontend-design for UI/components · frontend-slides for presentations · graphify for knowledge graphs</text>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- SECTION 6: WORKFLOW / CONTINUITY / DISCOVERY  y=1740  h=300 -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <rect x="20" y="1740" width="640" height="300" rx="12" fill="#f0feff" stroke="#a5f3fc" stroke-width="1.5"/>
+  <text x="35" y="1769" font-size="16" font-weight="700" fill="#164e63">Workflow / continuity / discovery</text>
+
+  <a href="./product-launch/SKILL.md">
+    <rect x="30" y="1780" width="200" height="80" rx="8" fill="white" stroke="#a5f3fc" stroke-width="1.5"/>
+    <text x="42" y="1803" font-size="13" font-weight="600" fill="#164e63">product-launch</text>
+    <text x="42" y="1823" font-size="11" fill="#0e7490">full go-to-market plan</text>
+    <text x="42" y="1848" font-size="10" fill="#94a3b8">/product-launch</text>
+  </a>
+  <a href="./handoff/SKILL.md">
+    <rect x="240" y="1780" width="200" height="80" rx="8" fill="white" stroke="#a5f3fc" stroke-width="1.5"/>
+    <text x="252" y="1803" font-size="13" font-weight="600" fill="#164e63">handoff</text>
+    <text x="252" y="1823" font-size="11" fill="#0e7490">resume with zero context loss</text>
+    <text x="252" y="1848" font-size="10" fill="#94a3b8">/handoff</text>
+  </a>
+  <a href="./context-audit/SKILL.md">
+    <rect x="450" y="1780" width="200" height="80" rx="8" fill="white" stroke="#a5f3fc" stroke-width="1.5"/>
+    <text x="462" y="1803" font-size="13" font-weight="600" fill="#164e63">context-audit</text>
+    <text x="462" y="1823" font-size="11" fill="#0e7490">token waste &amp; bloat</text>
+    <text x="462" y="1848" font-size="10" fill="#94a3b8">/context-audit</text>
+  </a>
+
+  <a href="./usage-local-api/SKILL.md">
+    <rect x="30" y="1870" width="200" height="80" rx="8" fill="white" stroke="#a5f3fc" stroke-width="1.5"/>
+    <text x="42" y="1893" font-size="13" font-weight="600" fill="#164e63">usage-local-api</text>
+    <text x="42" y="1913" font-size="11" fill="#0e7490">check Claude quota</text>
+    <text x="42" y="1938" font-size="10" fill="#94a3b8">natural language</text>
+  </a>
+  <a href="./find-skills/SKILL.md">
+    <rect x="240" y="1870" width="200" height="80" rx="8" fill="white" stroke="#a5f3fc" stroke-width="1.5"/>
+    <text x="252" y="1893" font-size="13" font-weight="600" fill="#164e63">find-skills</text>
+    <text x="252" y="1913" font-size="11" fill="#0e7490">discover new skills</text>
+    <text x="252" y="1938" font-size="10" fill="#94a3b8">/find-skills</text>
+  </a>
+  <a href="./dispatcher/SKILL.md">
+    <rect x="450" y="1870" width="200" height="80" rx="8" fill="white" stroke="#a5f3fc" stroke-width="1.5"/>
+    <text x="462" y="1893" font-size="13" font-weight="600" fill="#164e63">dispatcher</text>
+    <text x="462" y="1913" font-size="11" fill="#0e7490">routes everything</text>
+    <text x="462" y="1938" font-size="10" fill="#94a3b8">/dispatch</text>
+  </a>
+
+  <text x="35" y="1982" font-size="11" fill="#475569">handoff + context-audit keep continuity across sessions.</text>
+  <text x="35" y="1998" font-size="11" fill="#475569">usage-local-api checks your quota · dispatcher routes any request.</text>
+
+  <!-- Footer -->
+  <text x="340" y="2060" text-anchor="middle" font-size="11" fill="#94a3b8">25 skills · github.com/arielnishri-svg/claude-skills</text>
+
 </svg>
