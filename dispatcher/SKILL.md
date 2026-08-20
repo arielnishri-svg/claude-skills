@@ -26,7 +26,7 @@ User has an artifact (doc, plan, deck, strategy, code, pitch) that needs adversa
 
 **Signals:** "review this", "what's wrong with", "tear this apart", "stress-test", "find the flaws", "feedback on", user pastes a document/plan without further instruction
 
-**Default chain:** sparring-partner → stress-test
+**Default chain:** sparring-partner → handover-review
 
 **Optional extensions:** + fact-checker (if factual claims are central) + humanizer (if it's written content going public)
 
@@ -53,7 +53,7 @@ User wants output produced from scratch or near-scratch.
 
 ```
 1. Read request
-2. Check for explicit skill invocation (/sparring-partner, /stress-test, etc.)
+2. Check for explicit skill invocation (/sparring-partner, /handover-review, etc.)
    → If found: bypass dispatcher, run that skill directly
 3. Classify mode: ANALYZE / REVIEW / CREATE
 4. Confidence in classification:
@@ -94,6 +94,6 @@ Do not explain the dispatcher. Do not narrate the routing in detail. One line, t
 
 ## Example Routing Announcements
 
-- "MODE: REVIEW — running sparring-partner then stress-test."
+- "MODE: REVIEW — running sparring-partner then handover-review."
 - "MODE: CREATE — scope unclear. What's the primary audience for this?"
 - "MODE: ANALYZE — starting with clarifying questions, then decision-toolkit."
